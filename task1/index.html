@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '428px',
+
+                    'md': '834px',
+
+                    'lg': '1440px',
+                },
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen font-poppins flex items-center justify-center">
+    <header class="w-full mx-4 my-10 max-w-[396px] text-center border-[#4B5563] rounded-[10px] border px-6 py-16
+                    md:max-w-[674px] md:py-32
+                    lg:max-w-[1280px]">
+        <div class="pb-16">
+            <h1 class="text-3xl font-semibold mb-4 md:text-4xl">Trusted by creators worldwide</h1>
+            <p class="text-[#4B5563] text-[18px] font-normal">Lorem ipsum dolor sit amet consect adipisicing possimus
+            </p>
+        </div>
+        <div class="grid gap-1 md:grid-cols-2 lg:grid-rows-4">
+            <div class="bg-[#F5F5F5] rounded-t-m py-8">
+                <h3 class="text-[30px] font-semibold mb-[5px]">8,000+</h3>
+                <p class="text-[#4B5563] text-[14px] font-semibold">Creators on the platform</p>
+            </div>
+            <div class="bg-[#F5F5F5] py-8">
+                <h3 class="text-[30px] font-semibold mb-[5px]">3%</h3>
+                <p class="text-[#4B5563] text-[14px] font-semibold">Flat platform fee</p>
+            </div>
+            <div class="bg-[#F5F5F5] py-8">
+                <h3 class="text-[30px] font-semibold mb-[5px]">99.9%</h3>
+                <p class="text-[#4B5563] text-[14px] font-semibold">Uptime guarantee</p>
+            </div>
+            <div class="bg-[#F5F5F5] rounded-b-md py-8">
+                <h3 class="text-[30px] font-semibold mb-[5px]">$70M</h3>
+                <p class="text-[#4B5563] text-[14px] font-semibold">Paid out to creators</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
